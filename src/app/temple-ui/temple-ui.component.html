@@ -1,0 +1,36 @@
+
+  <div class="container">
+<!-- <h1 style="text-align: center;"> Temple in Odisha</h1>
+<div class="card" *ngFor="let temple of template | async">
+   <div class="card-body"> 
+    <img src={{temple.image}} class="img-fluid img-thumbnail" style="max-width: 200px;height: 200px">
+    <h5 class="card-title card-state">Name:{{temple.name}}</h5> <br>
+     <div class="row" style="padding: 15px;margin: 0 auto;"> 
+      <div class="card-description"><h6>Description</h6> <p>{{temple.description}}</p>
+      </div><br>
+       <div class="card-description"><h6>Location:</h6> <p>{{temple.state}},{{temple.district}}</p></div><br>
+        <div class="card-description"><h6>Cordinats: </h6><p>{{temple.cordinates[0]}},{{temple.cordinates[1]}}</p> </div> <br>
+        <div class="card-description"> <a href={{temple.wikiurl}}>More Details</a></div> 
+      </div>
+     </div>href={{temple.wikiurl}}
+     </div> -->
+     <div class="row">
+     <div class="column" *ngFor="let temple of template | async">
+     <div class="card"  >
+      <img src={{temple.image}} class="card-img-top img-responsive">
+      <div class="card-body">
+        <h5 class="card-title" style="text-decoration: underline;">{{temple.name}}</h5>
+        <p class="card-text" >{{temple.description}}</p>
+        <i class="fa fa-home"></i><span>{{temple.state}},{{temple.district}}</span><br>
+        <i class="fa fa-map-marker"></i><span>{{temple.cordinates[0]}},{{temple.cordinates[1]}}</span><br>
+        <!-- <button class="btn btn-primary" data-toggle="modal" data-target="#tempDeatils" 
+         [class.selected]="temple === imageid" (click)="ReadMore(temple)">Read More</button> -->
+         <a class=" btn btn-primary" href="{{temple.wikilink}}">View More</a>
+      </div>
+  </div>
+    </div>
+  </div>
+
+</div>
+<input type="checkbox" class="read-more-state" id="post-1" style="display: none;"/>
+<!-- <app-templepopupdetails *ngIf="isShown" [imageID]="imageid"></app-templepopupdetails> -->

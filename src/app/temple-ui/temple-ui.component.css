@@ -1,0 +1,29 @@
+
+  .fa-home{
+    padding: 8px;
+    color: #e91e63;
+    font-size: 26px;
+  
+  }   
+  .fa-map-marker{
+    padding: 8px;
+    font-size: 26px;
+    color: #e95e1e;
+  }  
+   .card-columns {
+  
+    display: inlie-flex;
+}
+.card-text{
+  /* height: 10rem;
+ overflow-y: scroll; */
+}
+.column {
+  /* column-count: 3; */
+  /* width: 100%; */
+  padding: 15px;
+}
+h5.card-title {
+  font-size: 30px;
+  padding-bottom: 15px;
+}
